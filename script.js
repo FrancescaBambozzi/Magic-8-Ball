@@ -24,15 +24,13 @@ $(document).ready(function () {
     $("#answer").fadeIn(4000);
     $("#8ball").attr("src", "answerside.png");
 
-    //take the list of answers and displays them randomly
+    //display the list of answers randomly
     var randomNumber = Math.random();
     var randomNumberForListOfAnswers = randomNumber * this.listOfAnswers.length;
     var randomIndex = Math.floor(randomNumberForListOfAnswers);
     var answer = this.listOfAnswers[randomIndex];
 
     $("#answer").text(answer);
-    console.log(question);
-    console.log(answer);
   };
 
   var onClick = function () {
