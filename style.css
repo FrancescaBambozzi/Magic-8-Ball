@@ -1,8 +1,13 @@
+html {
+     height: 100%; 
+}
+
 body {
       font-family: "Montserrat", sans-serif;
       margin: 0px;
       padding: 0px;
       background-image: linear-gradient(to right top, #454545, #635167, #945579, #c85674, #f16059);
+      background-repeat: no-repeat;
 }
 
 header {
