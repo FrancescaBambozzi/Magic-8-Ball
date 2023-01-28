@@ -1,13 +1,14 @@
 html {
   height: 100%;
   background: linear-gradient(
-    to right top,
-    #454545,
-    #635167,
-    #945579,
-    #c85674,
-    #f16059
-  ) no-repeat center center fixed; 
+      to right top,
+      #454545,
+      #635167,
+      #945579,
+      #c85674,
+      #f16059
+    )
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -100,6 +101,14 @@ footer p {
   }
 }
 
+/* Extra-small devices */
+@media only screen and (max-device-width: 360px) {
+  .ball,
+  .button {
+    width: 90%;
+  }
+}
+
 /* iPhone Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .ball,
@@ -134,5 +143,15 @@ footer p {
 
   .answer {
     left: 58%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ball,
+  .button {
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
   }
 }
